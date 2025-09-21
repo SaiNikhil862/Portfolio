@@ -53,6 +53,41 @@ const currentFrame = (index)=>( `/male${(index + 1).toString().padStart(4,'0')}.
 
 //adding the useEffect hook to run the animations code
 useEffect(()=> {
+  // Add styles dynamically instead of using <style> tag
+  const styleSheet = document.createElement('style');
+  styleSheet.innerHTML = `
+    @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+    
+    @keyframes anim {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    .pin-spacer { display: none !important; }
+    
+    .tooltip { position: relative; }
+    
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    
+    .tooltip:hover::after { opacity: 1; }
+  `;
+  document.head.appendChild(styleSheet);
+
   const canvas = canvasRef.current;
   const context = canvas.getContext('2d');
 
@@ -91,53 +126,13 @@ useEffect(()=> {
   return()=>{
     tween.scrollTrigger.kill();
     ScrollTrigger.getAll().forEach(st => st.kill());
+    // Clean up the added styles
+    document.head.removeChild(styleSheet);
   };
 }, []); 
 
 return (
   <>
-  <style>{`
-    @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
-    
-    @keyframes anim {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-    
-    .pin-spacer {
-      display: none !important;
-    }
-    
-    .tooltip {
-      position: relative;
-    }
-    
-    .tooltip::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 5px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      white-space: nowrap;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-      z-index: 10;
-    }
-    
-    .tooltip:hover::after {
-      opacity: 1;
-    }
-  `}</style>
-  
   {/* Fixed canvas that stays on screen */}
   <div className='fixed top-0 left-0 w-screen h-screen z-20 pointer-events-none flex items-center justify-center'>
     <canvas ref={canvasRef} className='max-w-screen max-h-screen object-contain'></canvas>
