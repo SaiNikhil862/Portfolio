@@ -1,10 +1,10 @@
-import React,{useRef,useEffect} from 'react'
+import {useRef,useEffect} from 'react'
 import {gsap} from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import html from '../assets/html.png'
 import css from '../assets/css.png'
 import js from '../assets/js.png'
-import React_js from '../assets/react_js.png'
+import Reactt from '../assets/Reactt.png'
 import java from '../assets/java.png'
 import database from '../assets/database.png'
 import Bootstrap from '../assets/bootstrap.png'
@@ -18,7 +18,6 @@ import agile_methodology from '../assets/agile_methodology.png'
 import powerbi from '../assets/powerbi.png'
 import LinkedIn from '../assets/LinkedIn.png'
 import gmail from '../assets/gmail.png'
-import phone from '../assets/phone.png'
 import feane from '../assets/feane.png'
 import mercedes from '../assets/mercedes.png'
 import bootcamp from '../assets/bootcamp.png'
@@ -42,7 +41,6 @@ const page2Ref = useRef(null);
 const page3Ref = useRef(null);
 const page4Ref = useRef(null);
 const page5Ref = useRef(null);
-const page6Ref = useRef(null);
 const page7Ref = useRef(null);
 const loopRef = useRef(null);
 
@@ -164,7 +162,7 @@ return (
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="HTML-5"><img src={html} alt="html" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="CSS-3"><img src={css} alt="css" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="JavaScript"><img src={js} alt="javascript" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="React.js"><img src={React_js} alt="react" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="React.js"><img src={Reactt} alt="react" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Java"><img src={java} alt="java" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Database"><img src={database} alt="database" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Git"><img src={Git} alt="git" /></div>
@@ -246,7 +244,7 @@ return (
           </div>
           <div className='flex flex-wrap ml-[2rem] mt-20 '>
             <a href="https://feane-clone-jynhh8of4-sai-nikhils-projects-adb845a3.vercel.app/" target="_blank" rel="noopener noreferrer" className='ml-[26vw] rounded-lg h-[160px] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Feane Clone"><img className="rounded-md" src={feane} alt="feane ecommerce website" /></a>
-            <a href="" target="_blank" rel="noopener noreferrer" className=' mt-[-50vh] ml-[40vw] h-[160px] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Bootcamp Website"><img className="rounded-md" src={bootcamp} alt="bootcamp website" /></a>
+            <a href="https://crud-operations-green.vercel.app/" target="_blank" rel="noopener noreferrer" className=' mt-[-50vh] ml-[40vw] h-[160px] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Bootcamp Website"><img className="rounded-md" src={bootcamp} alt="bootcamp website" /></a>
             <a href="https://routingclone-7nuz20xq4-sai-nikhils-projects-adb845a3.vercel.app/" target="_blank" rel="noopener noreferrer" className='mt-[6vh] ml-[37vw] h-[160px] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Yay! Koffee Clone (Routing)"><img className="rounded-md" src={koffee} alt="koffee clone" /></a>
           </div>
           
