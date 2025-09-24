@@ -4,24 +4,24 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import html from '../assets/html.png'
 import css from '../assets/css.png'
 import js from '../assets/js.png'
-import Reactt from '../assets/Reactt.png'
+import reactt from '../assets/reactt.png'
 import java from '../assets/java.png'
 import database from '../assets/database.png'
-import Bootstrap from '../assets/bootstrap.png'
-import Tailwind from '../assets/tailwind.png'
-import Git from '../assets/git.png'
-import GitHub from '../assets/github.png'
-import Vercel from '../assets/vercel.png'
-import Azure from '../assets/azure.png'
-import NPM from '../assets/npm.png'
+import bootstrap from '../assets/bootstrap.png'
+import tailwind from '../assets/tailwind.png'
+import git from '../assets/git.png'
+import gitHub from '../assets/github.png'
+import vercel from '../assets/vercel.png'
+import azure from '../assets/azure.png'
+import npm from '../assets/npm.png'
 import agile_methodology from '../assets/agile_methodology.png'
 import powerbi from '../assets/powerbi.png'
-import LinkedIn from '../assets/LinkedIn.png'
+import linkedIn from '../assets/linkedIn.png'
 import gmail from '../assets/gmail.png'
 import feane from '../assets/feane.png'
 import mercedes from '../assets/mercedes.png'
 import bootcamp from '../assets/bootcamp.png'
-import Ray from '../assets/Ray.png'
+import ray from '../assets/ray.png'
 import netflix from '../assets/netflix.png'
 import koffee from '../assets/koffee.png'
 
@@ -162,21 +162,21 @@ return (
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="HTML-5"><img src={html} alt="html" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="CSS-3"><img src={css} alt="css" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="JavaScript"><img src={js} alt="javascript" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="React.js"><img src={Reactt} alt="react" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="React.js"><img src={reactt} alt="react" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Java"><img src={java} alt="java" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Database"><img src={database} alt="database" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Git"><img src={Git} alt="git" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="GitHub"><img src={GitHub} alt="github" /></div> 
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Git"><img src={git} alt="git" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="GitHub"><img src={gitHub} alt="github" /></div> 
                </div>
                
                {/* Second row */}
                <div className='flex space-x-3 mt-14'>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Bootstrap"><img src={Bootstrap} alt="bootstrap" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Tailwind CSS"><img src={Tailwind} alt="tailwind" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Vercel"><img src={Vercel} alt="vercel" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Azure"><img src={Azure} alt="azure" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Bootstrap"><img src={bootstrap} alt="bootstrap" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Tailwind CSS"><img src={tailwind} alt="tailwind" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Vercel"><img src={vercel} alt="vercel" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Azure"><img src={azure} alt="azure" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Power BI"><img src={powerbi} alt="powerbi" /></div>
-                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="npm"><img src={NPM} alt="npm" /></div>
+                 <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="npm"><img src={npm} alt="npm" /></div>
                  <div className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Agile_methodology"><img src={agile_methodology} alt="agile methodology" /></div>
                </div>
              </div>
@@ -238,7 +238,7 @@ return (
       <div ref={page5Ref} className='h-screen w-screen pt-20 bg-[#f1f1f1] flex items-center justify-center relative'>
           <h1 className='text-[4rem] font-bold h-[6rem] w-[30rem] border-black ml-[2rem] mt-[-35rem] font-[500] leading-[1.6rem]'>PROJECTS</h1>
         <div className='flex space-x-10  h-[50vh] w-[70vw] ml-[-20rem] mt-21 '>
-            <a href="https://ray-romano-contracting-clone.vercel.app/" target="_blank" rel="noopener noreferrer" className='h-[250px] mt-[-6rem] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Ray Romano Clone"><img className="rounded-md" src={Ray} alt="ray romano" /></a>
+            <a href="https://ray-romano-contracting-clone.vercel.app/" target="_blank" rel="noopener noreferrer" className='h-[250px] mt-[-6rem] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Ray Romano Clone"><img className="rounded-md" src={ray} alt="ray romano" /></a>
             <a href="https://netflix-clone-gamma-black.vercel.app/" target="_blank" rel="noopener noreferrer" className='h-[250px] mt-[5rem] ml-[-9rem] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Netflix Clone"><img className="rounded-md" src={netflix} alt="netflix clone" /></a>
             <a href="https://mercedes-benz-clone.vercel.app/" target="_blank" rel="noopener noreferrer" className=' mt-[37vh] ml-[-40vw] h-[250px] w-[350px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Mercedes-Benz Clone"><img className="rounded-md" src={mercedes} alt="mercedes benz clone" /></a>
           </div>
@@ -259,8 +259,8 @@ return (
      <div ref={page7Ref} className='h-screen w-screen bg-[#f1f1f1] flex items-center justify-center relative'> 
       <h1 className='text-[4rem] font-bold ml-[-75rem] font-[500] leading-[1.6rem]'>REACH OUT TO ME!</h1>
       <div className='flex space-x-12 ml-[-35rem] pt-[10rem] mb-4'>
-                 <a href="https://github.com/SaiNikhil862" target="_blank" rel="noopener noreferrer" className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Github"><img src={GitHub} alt="github" /></a>
-                 <a href="https://www.linkedin.com/in/sai-nikhil-goud" target="_blank" rel="noopener noreferrer" className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="LinkedIn"><img src={LinkedIn} alt="linkedin" /></a>
+                 <a href="https://github.com/SaiNikhil862" target="_blank" rel="noopener noreferrer" className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Github"><img src={gitHub} alt="github" /></a>
+                 <a href="https://www.linkedin.com/in/sai-nikhil-goud" target="_blank" rel="noopener noreferrer" className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="LinkedIn"><img src={linkedIn} alt="linkedin" /></a>
                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sainikhilgoud103@gmail.com" target="_blank" rel="noopener noreferrer" className='h-[60px] w-[60px] hover:scale-110 transition-transform duration-200 tooltip' data-tooltip="Gmail"><img src={gmail} alt="Email me" /></a>
       </div>
       </div>
